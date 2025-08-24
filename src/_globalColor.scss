@@ -3,13 +3,15 @@ Certain colors are used for different and multiply types of elements.
 For greater control over colors visit each components .scss file. */
 
 // button colors
-$buttonColor: #55198b;
-$buttonHover: #8c43ce;
+$buttonColor: #8b1919;
+$buttonHover: #ce4343;
 $topButtonHover: #000;
 
 // text colors light theme
 $titleColor: #000000;
-$textColor: #000000;
+$textColor: #303030;
+$logoColor: #ee0000; //d80c0c
+$yellowColor: rgb(252, 252, 124);
 $subTitle: #868e96;
 $cardSubtitle: #666666;
 $talkCardSubTitle: #7f8287;
@@ -19,7 +21,7 @@ $blogCardTitleColor: #262626;
 $textColorDark: #ffffff;
 
 // toggle switch colors
-$toggleCheck: #2196f3;
+$toggleCheck: #f32121;
 $toggleSwitchSliderBG: #ccc;
 
 // githubRepo specific colors
@@ -31,12 +33,13 @@ $githubProfileCardLocationTS: #ffebcd;
 $githubProfileCardBorder: #6c63ff;
 
 // light background colors
-$lightBackground1: #fff;
-$lightBackground2: rgb(255, 255, 255);
-$lightBackground3: #f5f2f4;
+$lightBackground1: rgb(255, 255, 255);    // for the banner
+$lightBackground2: rgb(255, 255, 255); // for the cards
+$lightBackground3: #f5f2f4; // for the buttons in the cards
+$lightYellowBackground: rgb(255, 255, 249.9);
 $blogCardContainerColor: #586069;
 // dark background colors
-$darkBackground: #171c28;
+$darkBackground: #241414;
 
 // light theme box shadows
 $lightBoxShadowDark: rgba(0, 0, 0, 0.2);
@@ -69,7 +72,7 @@ $headerHoverBG: #f4f4f4;
 $contactDetailHoverTS: #b5b5b5;
 
 // misc backgrounds
-$progressBarSpanBG: #aaa5ff;
+$progressBarSpanBG: #ffa5a5;
 $iconBackground: #333;
 $appHeaderBG: #282c34;
 

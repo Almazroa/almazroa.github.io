@@ -1,0 +1,1139 @@
+
+reemm@Reem_isZen MINGW64 ~
+$ cd OneDrive/Documents/
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents
+$ git clone https://github.com/Almazroa/almazroa.github.io.git
+Cloning into 'almazroa.github.io'...
+remote: Enumerating objects: 4459, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 4459 (delta 2), reused 0 (delta 0), pack-reused 4446 (from 3)
+Receiving objects: 100% (4459/4459), 14.63 MiB | 4.99 MiB/s, done.
+Resolving deltas: 100% (1560/1560), done.
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents
+$ cd almazroa.github.io/
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    about.txt
+        deleted:    android-chrome-192x192.png
+        deleted:    android-chrome-384x384.png
+        deleted:    android-chrome-512x512.png
+        deleted:    apple-touch-icon.png
+        deleted:    asset-manifest.json
+        deleted:    browserconfig.xml
+        deleted:    favicon-16x16.png
+        deleted:    favicon-32x32.png
+        deleted:    favicon.ico
+        deleted:    favicon_io.zip
+        deleted:    index.html
+        deleted:    manifest.json
+        deleted:    mstile-150x150.png
+        deleted:    robots.txt
+        deleted:    safari-pinned-tab.svg
+        deleted:    site.webmanifest
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io (master)
+$ git add .
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    about.txt
+        deleted:    android-chrome-192x192.png
+        deleted:    android-chrome-384x384.png
+        deleted:    android-chrome-512x512.png
+        deleted:    apple-touch-icon.png
+        deleted:    asset-manifest.json
+        deleted:    browserconfig.xml
+        deleted:    favicon-16x16.png
+        deleted:    favicon-32x32.png
+        deleted:    favicon.ico
+        deleted:    favicon_io.zip
+        deleted:    index.html
+        deleted:    manifest.json
+        deleted:    mstile-150x150.png
+        deleted:    robots.txt
+        deleted:    safari-pinned-tab.svg
+        deleted:    site.webmanifest
+
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io (master)
+$ git commit -am "deleted garbage from main"
+[master 2708fbe] deleted garbage from main
+ 17 files changed, 161 deletions(-)
+ delete mode 100644 about.txt
+ delete mode 100644 android-chrome-192x192.png
+ delete mode 100644 android-chrome-384x384.png
+ delete mode 100644 android-chrome-512x512.png
+ delete mode 100644 apple-touch-icon.png
+ delete mode 100644 asset-manifest.json
+ delete mode 100644 browserconfig.xml
+ delete mode 100644 favicon-16x16.png
+ delete mode 100644 favicon-32x32.png
+ delete mode 100644 favicon.ico
+ delete mode 100644 favicon_io.zip
+ delete mode 100644 index.html
+ delete mode 100644 manifest.json
+ delete mode 100644 mstile-150x150.png
+ delete mode 100644 robots.txt
+ delete mode 100644 safari-pinned-tab.svg
+ delete mode 100644 site.webmanifest
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io (master)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (1/1), done.
+Writing objects: 100% (2/2), 200 bytes | 200.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Almazroa/almazroa.github.io.git
+   2b0f921..2708fbe  master -> master
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io (master)
+$ ls
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io (master)
+$ git checkout 69708e83f78954c0dc611397cc34c4a2d88f314a
+Note: switching to '69708e83f78954c0dc611397cc34c4a2d88f314a'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 69708e8 edited needed files
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io ((69708e8...))
+$ git checkout -b recovery
+Switched to a new branch 'recovery'
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io (recovery)
+$ code .
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io (recovery)
+$ git status
+On branch recovery
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   package.json
+        modified:   public/android-chrome-192x192.png
+        modified:   public/apple-touch-icon.png
+        modified:   public/favicon-16x16.png
+        modified:   public/favicon-32x32.png
+        modified:   public/favicon.ico
+        modified:   public/index.html
+        modified:   src/components/header/Header.js
+        modified:   src/portfolio.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        public/about.txt
+        public/android-chrome-512x512.png
+        public/site.webmanifest
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io (recovery)
+$ git add .
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io (recovery)
+$ git commit -am "checked out first commit, added edited files. Hoping to recover"
+[recovery bdc0f5c] checked out first commit, added edited files. Hoping to recover
+ 12 files changed, 50 insertions(+), 38 deletions(-)
+ create mode 100644 public/about.txt
+ create mode 100644 public/android-chrome-512x512.png
+ create mode 100644 public/site.webmanifest
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io (recovery)
+$ git push
+fatal: The current branch recovery has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin recovery
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io (recovery)
+$ git push --set-upstream origin recovery
+Enumerating objects: 32, done.
+Counting objects: 100% (32/32), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (18/18), 61.02 KiB | 20.34 MiB/s, done.
+Total 18 (delta 7), reused 4 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (7/7), completed with 7 local objects.
+remote:
+remote: Create a pull request for 'recovery' on GitHub by visiting:
+remote:      https://github.com/Almazroa/almazroa.github.io/pull/new/recovery
+remote:
+To https://github.com/Almazroa/almazroa.github.io.git
+ * [new branch]      recovery -> recovery
+branch 'recovery' set up to track 'origin/recovery'.
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io (recovery)
+$ npm install --save gh-pages
+npm warn deprecated stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+npm warn deprecated har-validator@5.1.5: this library is no longer supported
+npm warn deprecated rollup-plugin-terser@7.0.2: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-terser
+npm warn deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+npm warn deprecated w3c-hr-time@1.0.2: Use your platform's native performance.now() and performance.timeOrigin.
+npm warn deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm warn deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm warn deprecated workbox-cacheable-response@6.6.0: workbox-background-sync@6.6.0
+npm warn deprecated svgo@1.3.2: This SVGO version is no longer supported. Upgrade to v2.x.x.
+
+added 1558 packages, and audited 1559 packages in 18s
+
+252 packages are looking for funding
+  run `npm fund` for details
+
+40 vulnerabilities (6 low, 15 moderate, 15 high, 4 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io (recovery)
+$ npm audit fix
+
+added 55 packages, removed 48 packages, changed 92 packages, and audited 1566 packages in 29s
+
+272 packages are looking for funding
+  run `npm fund` for details
+
+# npm audit report
+
+gh-pages  <5.0.0
+Severity: critical
+tschaub gh-pages vulnerable to prototype pollution - https://github.com/advisories/GHSA-8mmm-9v2q-x3f9
+fix available via `npm audit fix --force`
+Will install gh-pages@6.3.0, which is a breaking change
+node_modules/gh-pages
+
+nth-check  <2.0.1
+Severity: high
+Inefficient Regular Expression Complexity in nth-check - https://github.com/advisories/GHSA-rp65-9cf3-cjxr
+fix available via `npm audit fix --force`
+Will install react-scripts@0.0.0, which is a breaking change
+node_modules/svgo/node_modules/nth-check
+  css-select  <=3.1.0
+  Depends on vulnerable versions of nth-check
+  node_modules/svgo/node_modules/css-select
+    svgo  1.0.0 - 1.3.2
+    Depends on vulnerable versions of css-select
+    node_modules/svgo
+      @svgr/plugin-svgo  <=5.5.0
+      Depends on vulnerable versions of svgo
+      node_modules/@svgr/plugin-svgo
+        @svgr/webpack  4.0.0 - 5.5.0
+        Depends on vulnerable versions of @svgr/plugin-svgo
+        node_modules/@svgr/webpack
+          react-scripts  >=0.1.0
+          Depends on vulnerable versions of @svgr/webpack
+          Depends on vulnerable versions of resolve-url-loader
+          Depends on vulnerable versions of webpack-dev-server
+          node_modules/react-scripts
+
+postcss  <8.4.31
+Severity: moderate
+PostCSS line return parsing error - https://github.com/advisories/GHSA-7fh5-64p2-3v2j
+fix available via `npm audit fix --force`
+Will install react-scripts@0.0.0, which is a breaking change
+node_modules/resolve-url-loader/node_modules/postcss
+  resolve-url-loader  0.0.1-experiment-postcss || 3.0.0-alpha.1 - 4.0.0
+  Depends on vulnerable versions of postcss
+  node_modules/resolve-url-loader
+
+webpack-dev-server  <=5.2.0
+Severity: moderate
+webpack-dev-server users' source code may be stolen when they access a malicious web site with non-Chromium based browser - https://github.com/advisories/GHSA-9jgg-88mc-972h
+webpack-dev-server users' source code may be stolen when they access a malicious web site - https://github.com/advisories/GHSA-4v9v-hfq4-rm2v
+fix available via `npm audit fix --force`
+Will install react-scripts@0.0.0, which is a breaking change
+node_modules/webpack-dev-server
+
+10 vulnerabilities (3 moderate, 6 high, 1 critical)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io (recovery)
+$ npm run deploy
+
+> developerfolio@0.1.0 predeploy
+> npm run build
+
+
+> developerfolio@0.1.0 build
+> react-scripts build
+
+Creating an optimized production build...
+Failed to compile.
+
+Module not found: Error: Can't resolve './assets/images/UWlogo.png' in 'C:\Users\reemm\OneDrive\Documents\almazroa.github.io\src'
+
+
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io (recovery)
+$ git status
+On branch recovery
+Your branch is up to date with 'origin/recovery'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   package-lock.json
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/assets/images/NEUlogo.png
+        src/assets/images/UWlogo.png
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io (recovery)
+$ git add .
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io (recovery)
+$ git commit -am "added uni logos and installed gh-pages"
+[recovery aa6166b] added uni logos and installed gh-pages
+ 3 files changed, 1693 insertions(+), 890 deletions(-)
+ create mode 100644 src/assets/images/NEUlogo.png
+ create mode 100644 src/assets/images/UWlogo.png
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io (recovery)
+$ git push
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 196.86 KiB | 14.06 MiB/s, done.
+Total 8 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/Almazroa/almazroa.github.io.git
+   bdc0f5c..aa6166b  recovery -> recovery
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io (recovery)
+$ npm run deploy
+
+> developerfolio@0.1.0 predeploy
+> npm run build
+
+
+> developerfolio@0.1.0 build
+> react-scripts build
+
+Creating an optimized production build...
+Compiled successfully.
+
+File sizes after gzip:
+
+  238.79 kB  build\static\js\main.5d76d9cb.js
+  5.49 kB    build\static\css\main.8e70ea13.css
+  1.11 kB    build\static\js\487.7ae187c0.chunk.js
+  873 B      build\static\js\990.567a0b93.chunk.js
+  556 B      build\static\css\487.bb36206c.chunk.css
+  496 B      build\static\css\990.c6a7ee28.chunk.css
+
+The project was built assuming it is hosted at /.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  npm install -g serve
+  serve -s build
+
+Find out more about deployment here:
+
+  https://cra.link/deployment
+
+
+> developerfolio@0.1.0 deploy
+> gh-pages -b master -d build
+
+Published
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io (recovery)
+$ npm start
+
+> developerfolio@0.1.0 start
+> react-scripts start
+
+(node:38040) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:38040) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+Compiled successfully!
+
+You can now view developerfolio in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.16.0.2:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io (recovery)
+$ npm start
+
+> developerfolio@0.1.0 start
+> react-scripts start
+
+(node:7604) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:7604) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option isdeprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+Compiled successfully!
+
+You can now view developerfolio in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.16.0.2:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Failed to compile.
+
+SassError: Undefined variable.
+   ╷
+69 │   color: $logoColor;
+   │          ^^^^^^^^^^
+   ╵
+  src\components\header\Header.scss 69:10  root stylesheet
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+ERROR in ./src/components/header/Header.scss (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/components/header/Header.scss)
+Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+SassError: Undefined variable.
+   ╷
+69 │   color: $logoColor;
+   │          ^^^^^^^^^^
+   ╵
+  src\components\header\Header.scss 69:10  root stylesheet
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\components\footer\Footer.js
+  Line 4:8:  'emoji' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+
+
+reemm@Reem_isZen MINGW64 ~/OneDrive/Documents/almazroa.github.io (recovery)
+$

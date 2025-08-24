@@ -11,5 +11,13 @@
 
 .footer-div {
   margin-top: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.0rem;
+}
+
+.footer-text {
+  font-size: 0.8rem;  // smaller than default
+}
+
+.dark-mode.footer-text {
+  font-size: 0.8rem;  // keep consistent for dark mode
 }

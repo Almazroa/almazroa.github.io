@@ -37,7 +37,7 @@ const socialMediaLinks = {
   github: "https://github.com/Almazroa",
   linkedin: "https://www.linkedin.com/in/reem-almazroa/",
   gmail: "almazroareem@gmail.com",
-  instagram: "https://www.instagram.com/plantedreem/",
+  // instagram: "https://www.instagram.com/plantedreem/",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -72,15 +72,15 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "sass",
-      fontAwesomeClassname: "fa-solid fa-c"
+      fontAwesomeClassname: "fas fa-robot"
     },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "C/C++",
+      fontAwesomeClassname: "fab fa-cuttlefish"
     },
     {
       skillName: "nodejs",
@@ -146,21 +146,35 @@ const educationInfo = {
 };
 
 // Your top 3 proficient stacks/tech experience
+// masters, life, countries visited, continents, conan watchthru, ace attorney playthru, 
 
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Master's | Expected Dec 2026",
+      progressPercentage: "25%"
+
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "Countries | 19", //Insert stack or technology you have experience in
+      progressPercentage: "10%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "US States | 14",
+      progressPercentage: "28%"
+    },
+    {
+      Stack: "Detective Conan watchthrough | 176",
+      progressPercentage: "15.1%" // 176/1168
+    },
+    {
+      Stack: "Ace Attorney playthrough",
+      progressPercentage: "50%" // 166/1168
+    },
+    {
+      Stack: "Life",
+      progressPercentage: "28.75%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -203,14 +217,14 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
+  title: "Projects",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
@@ -367,9 +381,9 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contact Me 📩"),
   subtitle:
-    "Curious? My Inbox is open for all.",
+    "Curious? My Inbox is open",
   number: "",
   email_address: "almazroareem@gmail.com"
 };
@@ -378,10 +392,10 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
