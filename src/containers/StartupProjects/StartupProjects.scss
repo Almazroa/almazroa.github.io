@@ -58,10 +58,21 @@
   align-items: center;
 }
 
+// .projects-container {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+//   gap: 1rem 1rem;
+// }
+
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+  grid-template-columns: repeat(2, 1fr); /* exactly 2 per row */
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr; /* single column on mobile */
+  }
 }
 
 .project-card-footer span.project-tag {

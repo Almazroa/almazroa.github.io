@@ -21,10 +21,11 @@ const illustration = {
 
 const greeting = {
   username: "Reem",
-  title: "Hi! This is Reem",
+  logo: "reemlogo.png",
+  title: "Welcome! \r\nI'm Reem", //can use \r\n
   subTitle: emoji(
-    `A firmware engineer trying to figure out how to build this website. 
-    Please wait. This will be worth it.`
+    `Please scroll🔻 
+        It only gets better from here`
   ),
   resumeLink:
     "", // Set to empty to hide the button. Use a google drive or similar
@@ -47,14 +48,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "I'm an embedded systems engineer specializing in robotics",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "🟥 Develop highly interactive Front end / User Interfaces for your web and mobile applications"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("🟨 Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "🟩 Integration of third party services such as Firebase/ AWS / Digital Ocean"
     )
   ],
 
@@ -63,57 +64,57 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "C/C++",
+      fontAwesomeClassname: "fab fa-cuttlefish"
     },
+    // {
+    //   skillName: "html-5",
+    //   fontAwesomeClassname: "fab fa-html5"
+    // },
+    {
+      skillName: "ROS2",
+      fontAwesomeClassname: "fas fa-robot"
+    },
+    {
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-gitkraken"
+    },
+    {
+      skillName: "Ubuntu",
+      fontAwesomeClassname: "fab fa-ubuntu"
+    },
+    {
+      skillName: "PCBs",
+      fontAwesomeClassname: "fas fa-microchip"
+    },
+    {
+      skillName: "3D Modeling",
+      fontAwesomeClassname: "fas fa-draw-polygon"
+    },
+    // {
+    //   skillName: "sql-database",
+    //   fontAwesomeClassname: "fas fa-database"
+    // },
+    // {
+    //   skillName: "aws",
+    //   fontAwesomeClassname: "fab fa-aws"
+    // },
+    // {
+    //   skillName: "firebase",
+    //   fontAwesomeClassname: "fas fa-fire"
+    // },
     {
       skillName: "Java",
       fontAwesomeClassname: "fab fa-java"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fas fa-robot"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "C/C++",
-      fontAwesomeClassname: "fab fa-cuttlefish"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
     }
+    // {
+    //   skillName: "docker",
+    //   fontAwesomeClassname: "fab fa-docker"
+    // }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -126,12 +127,12 @@ const educationInfo = {
     {
       schoolName: "Northeastern University",
       logo: require("./assets/images/NEUlogo.png"),
-      subHeader: "Master of Science in Robotics",
+      subHeader: "Master of Science in Robotics - Concentration in Electrical and Computer Engineering",
       duration: "Jan 2025 - (expected) Dec 2026",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      desc: "Research assistant @ Silicon Synapse Lab",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Coursework includes: Robotic Sensing & Navigation, Embedded Security, Mobile Robotics, Robotic Science & Systems",
+        "Assisting in embedded system design and sensor integration for the bio-inspired Aerobat robot"
       ]
     },
     {
@@ -139,8 +140,12 @@ const educationInfo = {
       logo: require("./assets/images/UWlogo.png"),
       subHeader: "Bachelor of Science in Computer Engineering",
       duration: "September 2020 - May 2024",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      desc: "",
+      descBullets: [
+        "Coursework includes: Embedded Microprocessor System Design, Computer Architecture, Operating Systems, Circuits, Signals & Systems",
+        "Capstone project: Mu-tion: a wearable motion controller",
+        "KGSP '12"
+      ]
     }
   ]
 };
@@ -152,8 +157,8 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Master's | Expected Dec 2026",
-      progressPercentage: "25%"
+      Stack: "Master's | Expected Dec 2026", // 4*15 weeks = 60
+      progressPercentage: "26.67%"
 
     },
     {
@@ -170,11 +175,11 @@ const techStack = {
     },
     {
       Stack: "Ace Attorney playthrough",
-      progressPercentage: "50%" // 166/1168
+      progressPercentage: "50%" 
     },
     {
       Stack: "Life",
-      progressPercentage: "28.75%"
+      progressPercentage: "27.38%" // life expectancy of 84 EU
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -183,7 +188,7 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: false, //Set it to true to show workExperiences Section
   experience: [
     {
       role: "Software Engineer",
@@ -224,29 +229,51 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Reem's Schemes",
+  subtitle: "A quick look at my projects and side quests",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/Jengics_robotarmwithtower02_presentation.jpg"), 
+      projectName: "Jengics",
+      projectDesc: "A Jenga playing robot!",
       footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
+        // {
+        //   name: "Visit page",
+        //   url: "https://almazroa.github.io/projects/"
+        // }
+      ]
+    },
+    {
+      image: require("./assets/images/nextuLogo.webp"),
+      projectName: "Mu-tion",
+      projectDesc: "A wearable motion controller",
+      footerLink: [
+        // {
+        //   name: "Visit page",
+        //   url: "https://almazroa.github.io/projects/"
+        // }
+      ]
+    },
+    {
+      image: require("./assets/images/Toothless_infrontofposter02.JPG"),
+      projectName: "Animatronic Toothless",
+      projectDesc: "I made Toothless with an animatronic tail in celebration of the new live action How to Train Your Dragon release",
+      footerLink: [
+        // {
+        //   name: "Visit Page",
+        //   url: "https://almazroa.github.io/projects/"
+        // }
         //  you can add extra buttons here.
       ]
     },
     {
       image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
+      projectName: "ALL PROJECTS",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Learn more and find my other schemes here",
+          url: "https://almazroa.github.io/projects/"
         }
       ]
     }
@@ -312,7 +339,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -383,7 +410,7 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me 📩"),
   subtitle:
-    "Curious? My Inbox is open",
+    "Curious? See you in my inbox!", //"Curious? My Inbox is open",
   number: "",
   email_address: "almazroareem@gmail.com"
 };

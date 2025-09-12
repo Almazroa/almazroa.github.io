@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
@@ -12,11 +12,12 @@ import {
   talkSection,
   achievementSection,
   resumeSection,
-  educationInfo
+  educationInfo,
+  bigProjects
 } from "../../portfolio";
 
 function Header() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   const viewExperience = workExperiences.display;
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
@@ -25,20 +26,31 @@ function Header() {
   const viewTalks = talkSection.display;
   const viewResume = resumeSection.display;
   const viewEducation = educationInfo.display;
+  const viewProjects = bigProjects.display;
 
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
         <a href="/" className="logo">
-          <span className="grey-color"> &lt;</span>
-          <span className="logo-name">{greeting.username}</span>
-          <span className="grey-color">/&gt;</span>
+          {greeting.logo ? (
+            <img
+              src={require(`../../assets/images/${greeting.logo}`)}
+              alt="Logo"
+              style={{ height: "100px", marginLeft: "25px", marginTop: "8px" }}
+            />
+          ) : (
+            <>
+              <span className="grey-color">&lt;</span>
+              <span className="logo-name">{greeting.username}</span>
+              <span className="grey-color">/&gt;</span>
+            </>
+          )}
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label
           className="menu-icon"
           htmlFor="menu-btn"
-          style={{color: "white"}}
+          style={{ color: "white" }}
         >
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
@@ -51,6 +63,11 @@ function Header() {
           {viewEducation && (
             <li>
               <a href="#education">Education</a>
+            </li>
+          )}
+          {viewProjects && (
+            <li>
+              <a href="#projects">Projects</a>
             </li>
           )}
           {viewExperience && (

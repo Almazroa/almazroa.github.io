@@ -19,6 +19,7 @@
 
 .subTitle {
   color: $subTitle !important;
+  white-space: pre-line;
 }
 
 .greeting-main {
@@ -46,6 +47,7 @@
   font-size: 70px;
   line-height: 1.1;
   color: $textColor !important;
+  white-space: pre-line;
 }
 
 .greeting-text-p {
