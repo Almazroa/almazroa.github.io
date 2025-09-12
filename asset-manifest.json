@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3c007e66.css",
-    "main.js": "/static/js/main.4ba49c50.js",
+    "main.css": "/static/css/main.ec426974.css",
+    "main.js": "/static/js/main.30d3b0e0.js",
     "static/css/487.a43b8815.chunk.css": "/static/css/487.a43b8815.chunk.css",
     "static/js/487.7ae187c0.chunk.js": "/static/js/487.7ae187c0.chunk.js",
     "static/css/990.c6a7ee28.chunk.css": "/static/css/990.c6a7ee28.chunk.css",
@@ -9,7 +9,11 @@
     "static/media/stanfordLogo.png": "/static/media/stanfordLogo.5a8e3a0a00949c93a9b8.png",
     "static/media/harvardLogo.png": "/static/media/harvardLogo.542dab89bfb35b7f5c0d.png",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/Toothless_infrontofposter02.JPG": "/static/media/Toothless_infrontofposter02.b9f219eba5da357af985.JPG",
     "static/media/NEUlogo.png": "/static/media/NEUlogo.5cd5ab57094d69851564.png",
+    "static/media/Jengics_robotarmwithtower_presentation.jpg": "/static/media/Jengics_robotarmwithtower_presentation.ec2fe8046cea0892c0fa.jpg",
+    "static/media/Toothless_infrontofposter.jpg": "/static/media/Toothless_infrontofposter.1a3120e4fbcfe592cd7c.jpg",
+    "static/media/Jengics_robotarmwithtower02_presentation.jpg": "/static/media/Jengics_robotarmwithtower02_presentation.bc8516161ebf1148bb87.jpg",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/contactMail.webp": "/static/media/contactMail.298a597edb8258fc13e5.webp",
     "static/media/manOnTable.svg": "/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
@@ -33,15 +37,15 @@
     "index.html": "/index.html",
     "static/media/googleAssistant.svg": "/static/media/googleAssistant.3227e84a89a1650db619.svg",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.3c007e66.css.map": "/static/css/main.3c007e66.css.map",
-    "main.4ba49c50.js.map": "/static/js/main.4ba49c50.js.map",
+    "main.ec426974.css.map": "/static/css/main.ec426974.css.map",
+    "main.30d3b0e0.js.map": "/static/js/main.30d3b0e0.js.map",
     "487.a43b8815.chunk.css.map": "/static/css/487.a43b8815.chunk.css.map",
     "487.7ae187c0.chunk.js.map": "/static/js/487.7ae187c0.chunk.js.map",
     "990.c6a7ee28.chunk.css.map": "/static/css/990.c6a7ee28.chunk.css.map",
     "990.567a0b93.chunk.js.map": "/static/js/990.567a0b93.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c007e66.css",
-    "static/js/main.4ba49c50.js"
+    "static/css/main.ec426974.css",
+    "static/js/main.30d3b0e0.js"
   ]
 }
