@@ -51,11 +51,14 @@ const skillsSection = {
   subTitle: "I'm an embedded systems engineer specializing in robotics",
   skills: [
     emoji(
-      "🟥 Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "🟥 Design & Develop\n\u2003🕐 Schematics, PCBs, prototypes, APIs\n\u2003🕑 Firmware in C/C++, from RTOS to bare-metal"
+      //Develop highly interactive Front end / User Interfaces for your web and mobile applications
     ),
-    emoji("🟨 Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    // emoji("🟨 Develop \n\u2003🕐 Real-time firmware in C/C++ \n\u2003🕑 Using memory and power-conscious practices"),
+    //Progressive Web Applications ( PWA ) in normal and SPA Stacks
     emoji(
-      "🟩 Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "🟨 Test & Maintain\n\u2003⚪ Debugging with GDB, SWD, and lab instruments \n\u2003⚫ Version control and documentation"
+      //Integration of third party services such as Firebase/ AWS / Digital Ocean
     )
   ],
 
@@ -165,17 +168,17 @@ const techStack = {
       Stack: "Countries | 19", //Insert stack or technology you have experience in
       progressPercentage: "10%" //Insert relative proficiency in percentage
     },
-    {
-      Stack: "US States | 14",
-      progressPercentage: "28%"
-    },
+    // {
+    //   Stack: "US States | 14",
+    //   progressPercentage: "28%"
+    // },
     {
       Stack: "Detective Conan watchthrough | 176",
       progressPercentage: "15.1%" // 176/1168
     },
     {
       Stack: "Ace Attorney playthrough",
-      progressPercentage: "50%" 
+      progressPercentage: "100%" 
     },
     {
       Stack: "Life",
@@ -269,7 +272,7 @@ const bigProjects = {
     {
       image: require("./assets/images/nextuLogo.webp"),
       projectName: "ALL PROJECTS",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc: "",
       footerLink: [
         {
           name: "Learn more and find my other schemes here",
