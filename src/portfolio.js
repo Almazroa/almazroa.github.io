@@ -247,7 +247,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
+      image: require("./assets/images/ECE453-hand03.PNG"),
       projectName: "Mu-tion",
       projectDesc: "A wearable motion controller",
       footerLink: [
@@ -258,7 +258,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/Toothless_infrontofposter02.JPG"),
+      image: require("./assets/images/Toothless_infrontofposter03.JPG"),
       projectName: "Animatronic Toothless",
       projectDesc: "I made Toothless with an animatronic tail in celebration of the new live action How to Train Your Dragon release",
       footerLink: [
@@ -270,7 +270,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
+      image: require("./assets/images/Reemsscheme.PNG"),
       projectName: "ALL PROJECTS",
       projectDesc: "",
       footerLink: [

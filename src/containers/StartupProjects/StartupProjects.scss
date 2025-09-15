@@ -4,6 +4,7 @@
   max-width: 100%;
   height: auto;
   width: 250px;
+  border-radius: 30px;
 }
 .card-title {
   color: $titleColor;
@@ -22,7 +23,7 @@
   flex-direction: column;
   background-color: $lightBackground2;
   padding: 1.5rem;
-  border-radius: 10px;
+  border-radius: 90px; // changed from 10
   border: 1px solid $lightBorder1;
   justify-content: center;
 }
@@ -56,6 +57,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
 }
 
 // .projects-container {
