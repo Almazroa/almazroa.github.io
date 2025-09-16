@@ -77,10 +77,18 @@
 @media (max-width: 768px) {
   .projects-container {
     grid-template-columns: 1fr; /* single column on mobile */
-    padding: 0 1rem; // optional: add breathing room
+    padding: 0 0rem; // optional: add breathing room
   }
   .project-card {
-    border-radius: 50px; // slightly smaller on mobile
+    display: flex;
+    flex-direction: column;
+    background-color: $lightBackground2;
+    padding: 1.5rem;
+    border-radius: 90px; // changed from 10
+    border: 1px solid $lightBorder1;
+    justify-content: center;
+    max-width: 100%; // prevent card from overflowing screen
+    box-sizing: border-box; // make sure padding doesn’t blow up width
   }
 }
 
@@ -106,5 +114,22 @@
   .project-subtitle {
     font-size: 16px;
     text-align: center;
+  }
+  .project-card-footer span.project-tag {
+    background: $buttonColor;
+    color: $lightBackground3;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 4px;
+    display: inline-flex;
+    font-size: 1rem; //changed from .75
+    height: 3em; // changed from 2
+    justify-content: center;
+    white-space: normal;
+    line-height: 1.5;
+    margin: 0 0.5rem 0.5rem 0;
+    padding: 0 1em; //changed from 75
+    cursor: pointer;
+    transition: 0.2s ease-in;
   }
 }

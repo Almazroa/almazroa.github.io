@@ -238,7 +238,7 @@ const bigProjects = {
     {
       image: require("./assets/images/Jengics_robotarmwithtower02_presentation.jpg"), 
       projectName: "Jengics",
-      projectDesc: "A Jenga playing robot!",
+      projectDesc: "A Jenga playing robot",
       footerLink: [
         // {
         //   name: "Visit page",
@@ -260,7 +260,7 @@ const bigProjects = {
     {
       image: require("./assets/images/Toothless_infrontofposter03.JPG"),
       projectName: "Animatronic Toothless",
-      projectDesc: "I made Toothless with an animatronic tail in celebration of the new live action How to Train Your Dragon release",
+      projectDesc: "In celebration of the new live action How to Train Your Dragon",
       footerLink: [
         // {
         //   name: "Visit Page",
