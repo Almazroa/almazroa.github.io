@@ -35,7 +35,7 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/Almazroa",
+  // github: "https://github.com/Almazroa",
   linkedin: "https://www.linkedin.com/in/reem-almazroa/",
   gmail: "almazroareem@gmail.com",
   // instagram: "https://www.instagram.com/plantedreem/",
@@ -51,13 +51,13 @@ const skillsSection = {
   subTitle: "I'm an embedded systems engineer specializing in robotics",
   skills: [
     emoji(
-      "🟥 Design & Develop\n\u2003🕐 Schematics, PCBs, prototypes, APIs\n\u2003🕑 Firmware in C/C++, from RTOS to bare-metal"
+      "🟥  Design & Develop\n\u2003🟨 Schematics, PCBs, prototypes, APIs\n\u2003🟩 Firmware in C/C++, from RTOS to bare-metal"
       //Develop highly interactive Front end / User Interfaces for your web and mobile applications
     ),
     // emoji("🟨 Develop \n\u2003🕐 Real-time firmware in C/C++ \n\u2003🕑 Using memory and power-conscious practices"),
     //Progressive Web Applications ( PWA ) in normal and SPA Stacks
     emoji(
-      "🟨 Test & Maintain\n\u2003⚪ Debugging with GDB, SWD, and lab instruments \n\u2003⚫ Version control and documentation"
+      "🟥  Test & Maintain\n\u2003🟨 Debugging with GDB, SWD, and lab instruments \n\u2003🟩 Version control and documentation"
       //Integration of third party services such as Firebase/ AWS / Digital Ocean
     )
   ],
