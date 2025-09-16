@@ -3,7 +3,7 @@
 .card-image {
   max-width: 100%;
   height: auto;
-  width: 250px;
+  width: 100%;
   border-radius: 30px;
 }
 .card-title {
@@ -26,6 +26,8 @@
   border-radius: 90px; // changed from 10
   border: 1px solid $lightBorder1;
   justify-content: center;
+  max-width: 100%; // prevent card from overflowing screen
+  box-sizing: border-box; // make sure padding doesn’t blow up width
 }
 .project-card-light {
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
@@ -70,10 +72,15 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* exactly 2 per row */
   gap: 2rem;
+  padding: 0 1rem; // optional: add some breathing room
 }
 @media (max-width: 768px) {
   .projects-container {
     grid-template-columns: 1fr; /* single column on mobile */
+    padding: 0 1rem; // optional: add breathing room
+  }
+  .project-card {
+    border-radius: 50px; // slightly smaller on mobile
   }
 }
 
