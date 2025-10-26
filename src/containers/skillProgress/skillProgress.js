@@ -27,7 +27,9 @@ export default function StackProgress() {
             })}
           </div>
 
-          <div className="skills-image">
+
+          {/* This is what displays the weird animation next to skills */}
+          {/* <div className="skills-image">
             {illustration.animated ? (
               <DisplayLottie animationData={Build} />
             ) : (
@@ -36,7 +38,7 @@ export default function StackProgress() {
                 src={require("../../assets/images/skill.svg")}
               />
             )}
-          </div>
+          </div> */}
         </div>
       </Fade>
     );

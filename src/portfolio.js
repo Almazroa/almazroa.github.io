@@ -161,7 +161,7 @@ const techStack = {
   experience: [
     {
       Stack: "Master's | Expected Dec 2026", // 4*15 weeks = 60
-      progressPercentage: "26.67%"
+      progressPercentage: "38.33%"
 
     },
     {
@@ -174,7 +174,7 @@ const techStack = {
     // },
     {
       Stack: "Detective Conan watchthrough | 176",
-      progressPercentage: "15.1%" // 176/1168
+      progressPercentage: "16.18%" // 176/1168
     },
     {
       Stack: "Ace Attorney playthrough",
