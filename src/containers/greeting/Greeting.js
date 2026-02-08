@@ -1,19 +1,48 @@
-import React, {useContext} from "react";
-import {Fade} from "react-reveal";
+// import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react"; // last two added for rotating
+// import { Fade } from "react-reveal";
+import Fade from "react-reveal/Fade";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import {illustration, greeting} from "../../portfolio";
+import { illustration, greeting } from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   if (!greeting.displayGreeting) {
     return null;
   }
+  // Rotating text component
+  const rotatingWords = [
+    "robots",
+    "embedded systems",
+    "hardware + software",
+    "for fun"
+  ];
+
+  const RotatingText = () => {
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setIndex((prev) => (prev + 1) % rotatingWords.length);
+      }, 2000);
+
+      return () => clearInterval(interval);
+    }, []);
+
+    return (
+      <span className="rotating-text">
+        {rotatingWords[index]}
+      </span>
+    );
+  };
+  // End of rotating text component
+
   return (
     <Fade bottom duration={1000} distance="40px">
       <div className="greet-main" id="greeting">
@@ -35,11 +64,14 @@ export default function Greeting() {
                 }
               >
                 {greeting.subTitle}
+                {/* <span className="hero-prefix">reem.codes </span>
+                <RotatingText /> */}
               </p>
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
               <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
+                <Button text="Portfolio" href="https://reem.codes/projects/" />
+                <Button text="Contact me" href="#contact" />                
                 {greeting.resumeLink && (
                   <a
                     href={require("./resume.pdf")}

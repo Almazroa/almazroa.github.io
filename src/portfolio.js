@@ -23,10 +23,11 @@ const greeting = {
   username: "Reem",
   logo: "reemlogo.png",
   title: "Welcome! \r\nI'm Reem", //can use \r\n
-  subTitle: emoji(
-    `Please scroll🔻 
-        It only gets better from here`
-  ),
+  subTitle: "",
+  // emoji(
+  //   `Please scroll🔻 
+  //       It only gets better from here`
+  // ),
   resumeLink:
     "", // Set to empty to hide the button. Use a google drive or similar
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -134,7 +135,7 @@ const educationInfo = {
       duration: "Jan 2025 - (expected) Dec 2026",
       desc: "Research assistant @ Silicon Synapse Lab",
       descBullets: [
-        "Coursework includes: Robotic Sensing & Navigation, Embedded Security, Mobile Robotics, Robotic Science & Systems",
+        "Coursework includes: Embedded Security, Wearable Robotics, Robot Mechanics & Control, Robotic Sensing & Navigation, Mobile Robotics, Robotic Science & Systems",
         "Assisting in embedded system design and sensor integration for the bio-inspired Aerobat robot"
       ]
     },
@@ -161,7 +162,7 @@ const techStack = {
   experience: [
     {
       Stack: "Master's | Expected Dec 2026", // 4*15 weeks = 60
-      progressPercentage: "38.33%"
+      progressPercentage: "58.33%"
 
     },
     {
@@ -172,17 +173,17 @@ const techStack = {
     //   Stack: "US States | 14",
     //   progressPercentage: "28%"
     // },
+    // {
+    //   Stack: "Detective Conan watchthrough | 176",
+    //   progressPercentage: "16.18%" // 176/1168
+    // },
     {
-      Stack: "Detective Conan watchthrough | 176",
-      progressPercentage: "16.18%" // 176/1168
-    },
-    {
-      Stack: "Ace Attorney playthrough",
-      progressPercentage: "100%" 
+      Stack: "Fire Emblem: Awakening playthrough",
+      progressPercentage: "34.29%" 
     },
     {
       Stack: "Life",
-      progressPercentage: "27.38%" // life expectancy of 84 EU
+      progressPercentage: "28.18%" // life expectancy of 84 EU
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -233,7 +234,7 @@ const openSource = {
 
 const bigProjects = {
   title: "Reem's Schemes",
-  subtitle: "A quick look at my projects and side quests",
+  subtitle: "A quick look at my projects",
   projects: [
     {
       image: require("./assets/images/Jengics_robotarmwithtower02_presentation.jpg"), 
@@ -275,8 +276,8 @@ const bigProjects = {
       projectDesc: "",
       footerLink: [
         {
-          name: "Learn more and find my other schemes here",
-          url: "https://almazroa.github.io/projects/"
+          name: "View my portfolio",
+          url: "https://reem.codes/projects/"
         }
       ]
     }
@@ -417,6 +418,7 @@ const contactInfo = {
   number: "",
   email_address: "almazroareem@gmail.com"
 };
+
 
 // Twitter Section
 
