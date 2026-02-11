@@ -2679,6 +2679,19 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
+		
+		.image.thumb {
+			width: 100%;
+			height: 220px;   /* choose your thumbnail height */
+			overflow: hidden;
+		}
+
+			.image.thumb img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
 
 /* List */
 
