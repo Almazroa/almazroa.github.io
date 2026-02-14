@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9942cb45.css",
-    "main.js": "/static/js/main.ad79b837.js",
+    "main.css": "/static/css/main.b5b0855c.css",
+    "main.js": "/static/js/main.f7313eb1.js",
     "static/css/487.a43b8815.chunk.css": "/static/css/487.a43b8815.chunk.css",
     "static/js/487.718f5afc.chunk.js": "/static/js/487.718f5afc.chunk.js",
     "static/css/990.c6a7ee28.chunk.css": "/static/css/990.c6a7ee28.chunk.css",
@@ -19,6 +19,8 @@
     "static/media/Toothless_infrontofposter03.JPG": "/static/media/Toothless_infrontofposter03.8c51699a19a8d33bb493.JPG",
     "static/media/Jengics_robotarmwithtower02_presentation.jpg": "/static/media/Jengics_robotarmwithtower02_presentation.cf37340c84a57f1dfbbe.jpg",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/schemes03.png": "/static/media/schemes03.a3bf60dbdb4d09d77f01.png",
+    "static/media/schemes04.png": "/static/media/schemes04.f4146c8946ae30191a5d.png",
     "static/media/contactMail.webp": "/static/media/contactMail.298a597edb8258fc13e5.webp",
     "static/media/manOnTable.svg": "/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
     "static/media/Reemsscheme.PNG": "/static/media/Reemsscheme.7df63936e9f091cfaa53.PNG",
@@ -31,6 +33,8 @@
     "static/media/airbnbLogo.png": "/static/media/airbnbLogo.e8497507db673acd3991.png",
     "static/media/programmer.svg": "/static/media/programmer.becd1465cc28d37ba166.svg",
     "static/media/jsFramework.svg": "/static/media/jsFramework.6f29b1988f86d14c7845.svg",
+    "static/media/schemes01.jpg": "/static/media/schemes01.fe42b0bd5f928af8174c.jpg",
+    "static/media/schemes02.jpg": "/static/media/schemes02.fe42b0bd5f928af8174c.jpg",
     "static/media/facebookLogo.png": "/static/media/facebookLogo.f46d68b24e9b4f73ee8b.png",
     "static/media/pwa.webp": "/static/media/pwa.c6fc354be22f121a3b12.webp",
     "static/media/codeInLogo.webp": "/static/media/codeInLogo.e41a71d512efeda2a55c.webp",
@@ -42,15 +46,15 @@
     "index.html": "/index.html",
     "static/media/googleAssistant.svg": "/static/media/googleAssistant.3227e84a89a1650db619.svg",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.9942cb45.css.map": "/static/css/main.9942cb45.css.map",
-    "main.ad79b837.js.map": "/static/js/main.ad79b837.js.map",
+    "main.b5b0855c.css.map": "/static/css/main.b5b0855c.css.map",
+    "main.f7313eb1.js.map": "/static/js/main.f7313eb1.js.map",
     "487.a43b8815.chunk.css.map": "/static/css/487.a43b8815.chunk.css.map",
     "487.718f5afc.chunk.js.map": "/static/js/487.718f5afc.chunk.js.map",
     "990.c6a7ee28.chunk.css.map": "/static/css/990.c6a7ee28.chunk.css.map",
     "990.ac96e9a9.chunk.js.map": "/static/js/990.ac96e9a9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9942cb45.css",
-    "static/js/main.ad79b837.js"
+    "static/css/main.b5b0855c.css",
+    "static/js/main.f7313eb1.js"
   ]
 }
