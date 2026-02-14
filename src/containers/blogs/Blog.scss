@@ -31,15 +31,29 @@
 }
 .blog-main-div {
   display: flex;
+  flex-direction: row;
+  align-items: center; 
+  gap: 40px; 
+  width: 100%;
+}
+.blog-image-div {
+  flex: 1; 
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 .blog-image-div > img {
-  max-width: 100%;
+  width: 85%;
   height: auto;
+  // object-fit: contain;
+  border-radius: 8px; /* Optional: matches your card vibe */
 }
 .blog-text-div {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 32px;
+  // display: grid;
+  // grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  // gap: 32px;
+  flex: 1; 
+  display: block; /* Overriding the grid since you only have one card */
 }
 .subTitle {
   color: $subTitle;
@@ -52,14 +66,21 @@
   }
 }
 @media (max-width: 768px) {
-  .blog-header-text {
-    font-size: 30px;
-    text-align: center;
+  // .blog-header-text {
+  //   font-size: 30px;
+  //   text-align: center;
+  // }
+  // .blog-subtitle {
+  //   font-size: 16px;
+  //   line-height: normal;
+  //   text-align: center;
+  // }
+  .blog-main-div {
+    flex-direction: column;
   }
-  .blog-subtitle {
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
+  
+  .blog-text-div, .blog-image-div {
+    width: 100%;
   }
 }
 

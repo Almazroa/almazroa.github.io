@@ -236,43 +236,43 @@ const bigProjects = {
   title: "Reem's Schemes",
   subtitle: "A quick look at my projects",
   projects: [
+    // {
+    //   image: require("./assets/images/Jengics_robotarmwithtower02_presentation.jpg"), 
+    //   projectName: "Jengics",
+    //   projectDesc: "A Jenga playing robot",
+    //   footerLink: [
+    //     // {
+    //     //   name: "Visit page",
+    //     //   url: "https://almazroa.github.io/projects/"
+    //     // }
+    //   ]
+    // },
+    // {
+    //   image: require("./assets/images/ECE453-hand03.PNG"),
+    //   projectName: "Mu-tion",
+    //   projectDesc: "A wearable motion controller",
+    //   footerLink: [
+    //     // {
+    //     //   name: "Visit page",
+    //     //   url: "https://almazroa.github.io/projects/"
+    //     // }
+    //   ]
+    // },
+    // {
+    //   image: require("./assets/images/Toothless_infrontofposter03.JPG"),
+    //   projectName: "Animatronic Toothless",
+    //   projectDesc: "In celebration of the new live action How to Train Your Dragon",
+    //   footerLink: [
+    //     // {
+    //     //   name: "Visit Page",
+    //     //   url: "https://almazroa.github.io/projects/"
+    //     // }
+    //     //  you can add extra buttons here.
+    //   ]
+    // },
     {
-      image: require("./assets/images/Jengics_robotarmwithtower02_presentation.jpg"), 
-      projectName: "Jengics",
-      projectDesc: "A Jenga playing robot",
-      footerLink: [
-        // {
-        //   name: "Visit page",
-        //   url: "https://almazroa.github.io/projects/"
-        // }
-      ]
-    },
-    {
-      image: require("./assets/images/ECE453-hand03.PNG"),
-      projectName: "Mu-tion",
-      projectDesc: "A wearable motion controller",
-      footerLink: [
-        // {
-        //   name: "Visit page",
-        //   url: "https://almazroa.github.io/projects/"
-        // }
-      ]
-    },
-    {
-      image: require("./assets/images/Toothless_infrontofposter03.JPG"),
-      projectName: "Animatronic Toothless",
-      projectDesc: "In celebration of the new live action How to Train Your Dragon",
-      footerLink: [
-        // {
-        //   name: "Visit Page",
-        //   url: "https://almazroa.github.io/projects/"
-        // }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/Reemsscheme.PNG"),
-      projectName: "ALL PROJECTS",
+      image: require("./assets/images/schemes04.png"),
+      projectName: "",
       projectDesc: "",
       footerLink: [
         {
@@ -282,7 +282,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -349,25 +349,26 @@ const achievementSection = {
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
+  title: "Projects",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+    "\n\n",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
+    // {
+    //   url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
+    //   title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+    //   description:
+    //     "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+    // },
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://reem.codes/projects/",
+      title: "Visit my portfolio!",
+      image: require("./assets/images/schemes04.png"),
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        ""
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Talks Sections

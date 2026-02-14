@@ -1,11 +1,11 @@
-import React, {useState, useEffect, useContext} from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./Blog.scss";
 import BlogCard from "../../components/blogCard/BlogCard";
-import {blogSection} from "../../portfolio";
-import {Fade} from "react-reveal";
+import { blogSection } from "../../portfolio";
+import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 export default function Blogs() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   const [mediumBlogs, setMediumBlogs] = useState([]);
   function setMediumBlogsFunction(array) {
     setMediumBlogs(array);
@@ -14,11 +14,11 @@ export default function Blogs() {
   function extractTextContent(html) {
     return typeof html === "string"
       ? html
-          .split(/<\/p>/i)
-          .map(part => part.split(/<p[^>]*>/i).pop())
-          .filter(el => el.trim().length > 0)
-          .map(el => el.replace(/<\/?[^>]+(>|$)/g, "").trim())
-          .join(" ")
+        .split(/<\/p>/i)
+        .map(part => part.split(/<p[^>]*>/i).pop())
+        .filter(el => el.trim().length > 0)
+        .map(el => el.replace(/<\/?[^>]+(>|$)/g, "").trim())
+        .join(" ")
       : NaN;
   }
   useEffect(() => {
@@ -48,52 +48,115 @@ export default function Blogs() {
     return null;
   }
   return (
-    <Fade bottom duration={1000} distance="20px">
-      <div className="main" id="blogs">
-        <div className="blog-header">
-          <h1 className="blog-header-text">{blogSection.title}</h1>
-          <p
-            className={
-              isDark ? "dark-mode blog-subtitle" : "subTitle blog-subtitle"
-            }
-          >
-            {blogSection.subtitle}
-          </p>
-        </div>
-        <div className="blog-main-div">
-          <div className="blog-text-div">
-            {blogSection.displayMediumBlogs !== "true" ||
-            mediumBlogs === "Error"
-              ? blogSection.blogs.map((blog, i) => {
-                  return (
-                    <BlogCard
-                      key={i}
-                      isDark={isDark}
-                      blog={{
-                        url: blog.url,
-                        image: blog.image,
-                        title: blog.title,
-                        description: blog.description
-                      }}
-                    />
-                  );
-                })
-              : mediumBlogs.map((blog, i) => {
-                  return (
-                    <BlogCard
-                      key={i}
-                      isDark={isDark}
-                      blog={{
-                        url: blog.link,
-                        title: blog.title,
-                        description: extractTextContent(blog.content)
-                      }}
-                    />
-                  );
-                })}
+    <div className="main" id="blogs">
+      <div className="blog-main-div">
+
+        {/* LEFT SIDE: Image sliding in from the left */}
+        <Fade left duration={1000}>
+          <div className="blog-image-div">
+            <img
+              src={require("../../assets/images/schemes04.png")}
+              alt="Portfolio Highlight"
+            />
           </div>
-        </div>
+        </Fade>
+
+        {/* RIGHT SIDE: Header + Card sliding in from the right */}
+        <Fade right duration={1000}>
+          <div className="blog-text-div">
+            <div className="blog-header">
+              <h1 className="blog-header-text">{blogSection.title}</h1>
+              <p className={isDark ? "dark-mode blog-subtitle" : "subTitle blog-subtitle"}>
+                {blogSection.subtitle}
+              </p>
+            </div>
+
+            <div className="blog-cards-container">
+              {blogSection.displayMediumBlogs !== "true" || mediumBlogs === "Error"
+                ? blogSection.blogs.map((blog, i) => (
+                  <BlogCard
+                    key={i}
+                    isDark={isDark}
+                    blog={{
+                      url: blog.url,
+                      image: blog.image,
+                      title: blog.title,
+                      description: blog.description
+                    }}
+                  />
+                ))
+                : mediumBlogs.map((blog, i) => (
+                  <BlogCard
+                    key={i}
+                    isDark={isDark}
+                    blog={{
+                      url: blog.link,
+                      title: blog.title,
+                      description: extractTextContent(blog.content)
+                    }}
+                  />
+                ))}
+            </div>
+          </div>
+        </Fade>
+
       </div>
-    </Fade>
+    </div>
   );
+
+  // return (
+  //   <Fade bottom duration={1000} distance="20px">
+  //     <div className="main" id="blogs">
+  //       <div className="blog-header">
+  //         <h1 className="blog-header-text">{blogSection.title}</h1>
+  //         <p
+  //           className={
+  //             isDark ? "dark-mode blog-subtitle" : "subTitle blog-subtitle"
+  //           }
+  //         >
+  //           {blogSection.subtitle}
+  //         </p>
+  //       </div>
+  //       <div className="blog-main-div">
+  //         <div className="blog-text-div">
+  //           {blogSection.displayMediumBlogs !== "true" ||
+  //             mediumBlogs === "Error"
+  //             ? blogSection.blogs.map((blog, i) => {
+  //               return (
+  //                 <BlogCard
+  //                   key={i}
+  //                   isDark={isDark}
+  //                   blog={{
+  //                     url: blog.url,
+  //                     image: blog.image,
+  //                     title: blog.title,
+  //                     description: blog.description
+  //                   }}
+  //                 />
+  //               );
+  //             })
+  //             : mediumBlogs.map((blog, i) => {
+  //               return (
+  //                 <BlogCard
+  //                   key={i}
+  //                   isDark={isDark}
+  //                   blog={{
+  //                     url: blog.link,
+  //                     title: blog.title,
+  //                     description: extractTextContent(blog.content)
+  //                   }}
+  //                 />
+  //               );
+  //             })}
+  //         </div>
+  //         <div className="blog-image-div">
+  //           <img
+  //             src={require("../../assets/images/schemes04.png")}
+  //             alt="Portfolio Preview"
+  //           />
+  //         </div>
+  //       </div>
+  //     </div>
+  //   </Fade>
+  // );
 }
