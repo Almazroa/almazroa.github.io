@@ -162,7 +162,7 @@ const techStack = {
   experience: [
     {
       Stack: "Master's | Expected Dec 2026", // 4*15 weeks = 60
-      progressPercentage: "58.33%"
+      progressPercentage: "75%"
 
     },
     {
@@ -183,7 +183,7 @@ const techStack = {
     },
     {
       Stack: "Life",
-      progressPercentage: "28.18%" // life expectancy of 84 EU
+      progressPercentage: "27.18%" // life expectancy of 84 EU
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
