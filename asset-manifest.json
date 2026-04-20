@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b5b0855c.css",
-    "main.js": "/static/js/main.f7313eb1.js",
+    "main.js": "/static/js/main.9b00a488.js",
     "static/css/487.a43b8815.chunk.css": "/static/css/487.a43b8815.chunk.css",
     "static/js/487.718f5afc.chunk.js": "/static/js/487.718f5afc.chunk.js",
     "static/css/990.c6a7ee28.chunk.css": "/static/css/990.c6a7ee28.chunk.css",
@@ -12,14 +12,18 @@
     "static/media/ECE453-hand03.PNG": "/static/media/ECE453-hand03.06f52ace5d7baa1db530.PNG",
     "static/media/ECE453-hand02.PNG": "/static/media/ECE453-hand02.217811500077ef63959f.PNG",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/schemes04-16-9ratio.jpg": "/static/media/schemes04-16-9ratio.794239f2fdc4af368545.jpg",
     "static/media/NEUlogo.png": "/static/media/NEUlogo.5cd5ab57094d69851564.png",
     "static/media/Jengics_robotarmwithtower_presentation.jpg": "/static/media/Jengics_robotarmwithtower_presentation.ec2fe8046cea0892c0fa.jpg",
     "static/media/Toothless_infrontofposter.jpg": "/static/media/Toothless_infrontofposter.1a3120e4fbcfe592cd7c.jpg",
     "static/media/ECE453-hand.PNG": "/static/media/ECE453-hand.051bb648a42709b25b4a.PNG",
+    "static/media/schemes04_16-9ratioCentered.png": "/static/media/schemes04_16-9ratioCentered.09399f51f382023f05fe.png",
+    "static/media/schemes04_16-9ratio.png": "/static/media/schemes04_16-9ratio.b98aa53db8929241e11c.png",
     "static/media/Toothless_infrontofposter03.JPG": "/static/media/Toothless_infrontofposter03.8c51699a19a8d33bb493.JPG",
     "static/media/Jengics_robotarmwithtower02_presentation.jpg": "/static/media/Jengics_robotarmwithtower02_presentation.cf37340c84a57f1dfbbe.jpg",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/schemes03.png": "/static/media/schemes03.a3bf60dbdb4d09d77f01.png",
+    "static/media/schemes04 - Copy.png": "/static/media/schemes04 - Copy.f4146c8946ae30191a5d.png",
     "static/media/schemes04.png": "/static/media/schemes04.f4146c8946ae30191a5d.png",
     "static/media/contactMail.webp": "/static/media/contactMail.298a597edb8258fc13e5.webp",
     "static/media/manOnTable.svg": "/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
@@ -47,7 +51,7 @@
     "static/media/googleAssistant.svg": "/static/media/googleAssistant.3227e84a89a1650db619.svg",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.b5b0855c.css.map": "/static/css/main.b5b0855c.css.map",
-    "main.f7313eb1.js.map": "/static/js/main.f7313eb1.js.map",
+    "main.9b00a488.js.map": "/static/js/main.9b00a488.js.map",
     "487.a43b8815.chunk.css.map": "/static/css/487.a43b8815.chunk.css.map",
     "487.718f5afc.chunk.js.map": "/static/js/487.718f5afc.chunk.js.map",
     "990.c6a7ee28.chunk.css.map": "/static/css/990.c6a7ee28.chunk.css.map",
@@ -55,6 +59,6 @@
   },
   "entrypoints": [
     "static/css/main.b5b0855c.css",
-    "static/js/main.f7313eb1.js"
+    "static/js/main.9b00a488.js"
   ]
 }
