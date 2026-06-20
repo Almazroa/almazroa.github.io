@@ -166,8 +166,8 @@ const techStack = {
 
     },
     {
-      Stack: "Countries | 19", //Insert stack or technology you have experience in
-      progressPercentage: "10%" //Insert relative proficiency in percentage
+      Stack: "Countries | 20", //Insert stack or technology you have experience in
+      progressPercentage: "10.26%" //Insert relative proficiency in percentage
     },
     // {
     //   Stack: "US States | 14",
@@ -183,7 +183,7 @@ const techStack = {
     },
     {
       Stack: "Life",
-      progressPercentage: "27.18%" // life expectancy of 84 EU
+      progressPercentage: "28.33%" // based on life expectancy of 85
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
